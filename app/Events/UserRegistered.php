@@ -32,6 +32,7 @@ class UserRegistered implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('info-channel');
+        //return new PrivateChannel('info-channel');
+        return ['info-channel'];
     }
 }

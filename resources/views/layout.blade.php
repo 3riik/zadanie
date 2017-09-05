@@ -33,15 +33,17 @@
 	<div class="row">
 		<div class="container">
 			<h3>Broadcast</h3>
-
+				@{{ user.name }} - @{{ user.email }}
 			<script type="text/javascript">
 				
 			</script>
 		</div>
 	</div>
 	<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+	<script src="https://unpkg.com/vue"></script>
 	<script src="{{ URL::asset('js/app.js') }}"></script>
 	<script src="{{ URL::asset('js/register-ajax.js') }}"></script>
+
 	</body>
 
 </html>
