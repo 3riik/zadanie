@@ -31,5 +31,6 @@ class RegisterUser implements ShouldQueue
     {
         $user = User::create($this->data);
         $user->hobby()->create($this->data);
+        event(new UserRegistered($user));
     }
 }
